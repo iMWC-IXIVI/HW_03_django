@@ -1,11 +1,6 @@
 <!--Страница только для пользователей прошедших аутентификацию-->
+{% extends 'flatpages/bootstrap.html' %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ flatpage.title }}</title>
-</head>
-<body>
-    <h1>{{ flatpage.content }}</h1>
-</body>
-</html>
+{% block content %}
+<h1>{{ flatpage.content }}</h1>
+{% endblock content %}
